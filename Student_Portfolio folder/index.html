@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width" />
         <title>Coredelle Carlsen</title>
         <link rel="stylesheet" type="text/css" href="portfolio.css">
+        <script src="portfolio.js"></script>
     </head>
 
     <!--Body-->
@@ -14,6 +15,8 @@
         <!--Navbar-->
         <div class="Navbar">
             <a class="active" href="#Home">Home</a>
+             <!-- New section added -->
+             <a href="#Slideshow">Slideshow</a>
             <a href="#About">About</a>
             <a href="#GitHub">GitHub</a>
             <a href="#Contact">Contact</a>
@@ -47,6 +50,40 @@
                     <br> Thank you for stopping by and enjoy! 
                 </p>
             </strong>
+        </div>
+
+         <!-- Slideshow section added -->
+         <div id="Slideshow">
+            <div id="Slideshow_Background"> 
+                <div id="Slideshow_Container">
+                    <!-- Slide 1 of 3 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="me.JPG">
+                        <div class="text">I'm available to assist you on your project!</div>
+                    </div>
+                    <!-- Slide 2 of 3 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="css.jpg"> 
+                        <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, and JavaScript</div>
+                    </div>
+                    <!-- Slide 3 of 3 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="computer.jpg">
+                        <div class="text">Contact me </div>
+                    </div>
+                    <!-- Previous and next buttons -->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br> <!-- Adds a space between the slideshow images and the dots -->
+
+                <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+            </div>
         </div>
 
         <!--About section-->
